@@ -472,9 +472,9 @@
   </div>
   <div class="hero-right">
     <div class="stat-tile">
-      <div class="tile-label">Currently Studying</div>
-      <div class="tile-value">SQL</div>
-      <div class="tile-sub">Kaggle Data Science track — building toward DS internships</div>
+      <div class="tile-label">Latest Project</div>
+      <div class="tile-value">NBA</div>
+      <div class="tile-sub">Live data pipeline — NBA API → SQLite → Python visualizations</div>
     </div>
     <div class="stat-tile">
       <div class="tile-label">GPA</div>
@@ -483,13 +483,13 @@
     </div>
     <div class="stat-tile">
       <div class="tile-label">Projects Built</div>
-      <div class="tile-value">4</div>
-      <div class="tile-sub">Python, C++, Web</div>
+      <div class="tile-value">5</div>
+      <div class="tile-sub">Python, SQL, C++, Web</div>
     </div>
     <div class="stat-tile">
       <div class="tile-label">Graduating</div>
       <div class="tile-value">2028</div>
-      <div class="tile-sub">B.S. CS + Math Minor</div>
+      <div class="tile-sub">B.S. CS + Data Science Minor</div>
     </div>
   </div>
 </section>
@@ -503,7 +503,7 @@
         <h2 class="section-title">I build things<br>and figure the rest out.</h2>
         <div class="about-body fade-up">
           <p>
-            I'm a second-year Computer Science student at Cal State Fullerton with a minor in Mathematics.
+            I'm a second-year Computer Science student at Cal State Fullerton with a minor in Data Science.
             I got into CS because I like solving problems — and I stay because building something
             that actually works is one of the best feelings there is.
           </p>
@@ -522,9 +522,9 @@
       <div>
         <div class="currently-box fade-up">
           <h4>Currently Working On</h4>
-          <div class="learning-item">SQL fundamentals via Kaggle micro-course</div>
+          <div class="learning-item">NBA data pipeline — API ingestion, SQLite, SQL window functions</div>
+          <div class="learning-item">Advanced SQL via Kaggle — CTEs, window functions, query optimization</div>
           <div class="learning-item">Pandas & Python data analysis workflows</div>
-          <div class="learning-item">Building a data-driven portfolio project with real datasets</div>
           <div class="learning-item">Statistics Applied to Natural Sciences (Spring 2026)</div>
           <div class="learning-item">Python Programming — CPSC 223P (Spring 2026)</div>
         </div>
@@ -539,25 +539,40 @@
   <h2 class="section-title">Things I've built.</h2>
   <div class="projects-grid">
 
+    <!-- FEATURED: NBA -->
     <div class="project-card featured fade-up">
       <div class="project-left">
         <div class="project-num">01 — FEATURED</div>
-        <div class="project-name">Personal Finance Tracker</div>
-        <div class="project-tech">Python · Tkinter · Matplotlib</div>
+        <div class="project-name">NBA Player Performance Analyzer</div>
+        <div class="project-tech">Python · SQL · SQLite · Pandas · Matplotlib · Seaborn</div>
       </div>
       <div class="project-right">
         <ul class="project-bullets">
-          <li>Full GUI desktop app tracking income, expenses & goals with 100% data accuracy</li>
-          <li>Real-time pie charts & bar graphs across 10+ categories using Matplotlib</li>
-          <li>CSV-based persistence system with automated daily backups</li>
-          <li>Live dashboard with running balance and per-category breakdowns</li>
+          <li>End-to-end ETL pipeline — pulls live 2024-25 stats for 569 players via the NBA API and loads into SQLite</li>
+          <li>SQL window functions (RANK OVER PARTITION BY) to rank players within each team by scoring output</li>
+          <li>Scatter plot surfacing that high-volume scorers cluster between 43–52% FG — a real analytical insight</li>
+          <li>Mirrors real data engineering workflows: API ingestion → cleaning → warehouse → visualization</li>
         </ul>
-        <a href="https://github.com/ZishanSha/Personal-Finance-Tracker" class="project-link" target="_blank">View on GitHub ↗</a>
+        <a href="https://github.com/ZishanSha/nba-player-analysis" class="project-link" target="_blank">View on GitHub ↗</a>
       </div>
     </div>
 
+    <!-- 02: Personal Finance Tracker -->
     <div class="project-card fade-up">
       <div class="project-num">02</div>
+      <div class="project-name">Personal Finance Tracker</div>
+      <div class="project-tech">Python · Tkinter · Matplotlib</div>
+      <p class="project-desc">
+        Full GUI desktop app tracking income, expenses and goals with real-time pie charts
+        and bar graphs across 10+ categories. CSV-based persistence with automated daily backups
+        and a live dashboard with running balance and per-category breakdowns.
+      </p>
+      <a href="https://github.com/ZishanSha/Personal-Finance-Tracker" class="project-link" target="_blank">View on GitHub ↗</a>
+    </div>
+
+    <!-- 03: Custom Encryption System -->
+    <div class="project-card fade-up">
+      <div class="project-num">03</div>
       <div class="project-name">Custom Encryption System</div>
       <div class="project-tech">Python</div>
       <p class="project-desc">
@@ -568,8 +583,9 @@
       <a href="https://github.com/ZishanSha/Custom-Encryption-System" class="project-link" target="_blank">View on GitHub ↗</a>
     </div>
 
+    <!-- 04: Grocery List Manager -->
     <div class="project-card fade-up">
-      <div class="project-num">03</div>
+      <div class="project-num">04</div>
       <div class="project-name">Grocery List Manager</div>
       <div class="project-tech">C++</div>
       <p class="project-desc">
@@ -580,8 +596,9 @@
       <a href="https://github.com/ZishanSha" class="project-link" target="_blank">View on GitHub ↗</a>
     </div>
 
+    <!-- 05: Portfolio Website -->
     <div class="project-card fade-up">
-      <div class="project-num">04</div>
+      <div class="project-num">05</div>
       <div class="project-name">Portfolio Website</div>
       <div class="project-tech">HTML · CSS · JavaScript</div>
       <p class="project-desc">
@@ -605,6 +622,7 @@
         <h4>Languages</h4>
         <div class="skill-tags">
           <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
           <span class="skill-tag">C++</span>
           <span class="skill-tag">JavaScript</span>
           <span class="skill-tag">HTML</span>
@@ -616,8 +634,10 @@
         <div class="skill-tags">
           <span class="skill-tag">Pandas</span>
           <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">SQL ↗</span>
-          <span class="skill-tag">CSV Pipelines</span>
+          <span class="skill-tag">Seaborn</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Window Functions</span>
+          <span class="skill-tag">EDA</span>
           <span class="skill-tag">Statistics</span>
         </div>
       </div>
@@ -626,19 +646,19 @@
         <div class="skill-tags">
           <span class="skill-tag">Git</span>
           <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Jupyter</span>
           <span class="skill-tag">VS Code</span>
           <span class="skill-tag">Linux</span>
-          <span class="skill-tag">Codespaces</span>
         </div>
       </div>
       <div class="skill-block">
         <h4>Concepts</h4>
         <div class="skill-tags">
+          <span class="skill-tag">ETL Pipelines</span>
           <span class="skill-tag">Data Structures</span>
           <span class="skill-tag">Algorithms</span>
           <span class="skill-tag">OOP</span>
-          <span class="skill-tag">File I/O</span>
-          <span class="skill-tag">GUI Dev</span>
+          <span class="skill-tag">REST APIs</span>
         </div>
       </div>
     </div>
@@ -658,7 +678,7 @@
     <ul class="exp-bullets">
       <li>Engaged in 15+ technical workshops covering Git/GitHub, software development workflows, and industry-standard tools — applying skills directly to 3+ independent projects.</li>
       <li>Collaborated cross-functionally with 50+ CS students on technical problem-solving and algorithm exercises, strengthening ability to communicate and reason through complex solutions.</li>
-      <li>Demonstrated consistent reliability through perfect attendance while self-directing learning of Python, C++, SQL, and web development technologies outside formal coursework.</li>
+      <li>Independently pursued Python, SQL, and data analysis skills outside formal coursework — completed Kaggle's Intro to SQL and Advanced SQL certifications covering CTEs, window functions, and query optimization.</li>
     </ul>
   </div>
 </section>
@@ -699,7 +719,6 @@
 </footer>
 
 <script>
-  // Fade-up on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
